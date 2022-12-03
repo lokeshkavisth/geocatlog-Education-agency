@@ -1,58 +1,11 @@
-"use strict";
+$(function () {
+  const navbar = $("#nav");
 
-/**
- * add eventListener on multiple elements
- */
-
-// const addEventOnElements = function (elements, eventType, callback) {
-//   for (let i = 0, len = elements.length; i < len; i++) {
-//     elements[i].addEventListener(eventType, callback);
-//   }
-// }
-
-/**
- * PRELOADER
- */
-
-// const preloader = document.querySelector("[data-preloader]");
-// const circle = document.querySelector("[data-circle]");
-
-// window.addEventListener("load", function () {
-//   preloader.classList.add("loaded");
-//   circle.style.animation = "none";
-//   document.body.classList.add("loaded");
-// });
-
-/**
- * NAVBAR TOGGLER FOR MOBILE
- */
-
-// const navbar = document.querySelector("[data-navbar]");
-// const navTogglers = document.querySelectorAll("[data-nav-toggler]");
-// const overlay = document.querySelector("[data-overlay]");
-
-// const toggleNavbar = function () {
-//   navbar.classList.toggle("active");
-//   overlay.classList.toggle("active");
-//   document.body.classList.toggle("nav-active");
-// }
-
-// addEventOnElements(navTogglers, "click", toggleNavbar);
-
-/**
- * HEADER
- *
- * add active class on header when window scroll down to 100px
- */
-
-// const nav = document.querySelector("[data-navbar]");
-
-// const navActive = function () {
-//   if (window.scrollY > 100) {
-//     nav.classList.add("nav__active");
-//   } else {
-//     nav.classList.remove("nav__active");
-//   }
-// };
-
-// window.addEventListener("scroll", navActive);
+  $(window).scroll(() => {
+    if ($(window).scrollTop() <= 40) {
+      navbar.addClass(".fixedNav");
+    } else {
+      navbar.removeClass(".fixedNav");
+    }
+  });
+});
