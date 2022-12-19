@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Geocatlog - Your title goes here</title>
-    <meta name="title" content="Geocatlog" />
+    <meta name="title" content="Geocatalog" />
     <meta
       name="description"
       content="This is a education html template made by lokeshkavisth"
@@ -17,6 +16,7 @@
     <link rel="stylesheet" href="./assets/font/font.css" />
 
     <link rel="stylesheet" href="./dist/style.css" />
+    <title>Geocatalog - Your title goes here</title>
   </head>
 
   <body>
@@ -27,8 +27,8 @@
         <div class="logo">
           <a href="./index.html">
             <img
-              src="./assets/images/logo.png"
-              alt="Geocatlog"
+              src="./assets/images/logo.svg"
+              alt="Geocatalog"
               loading="lazy"
             />
           </a>
@@ -36,31 +36,35 @@
         <div class="nav__links">
           <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="">Courses</a></li>
+            <li><a href="./course.html">Courses</a></li>
             <li><a href="./writing.html">Writing</a></li>
             <li><a href="./about.html">About us</a></li>
+            <li><a href="./consult.html">Consultancy</a></li>
           </ul>
         </div>
         <div class="nav__btn">
           <a href="./contact.html" class="btn">Connect us</a>
+          <div class="menu__bar">
+            <ion-icon name="reorder-three-outline" id="menu"></ion-icon>
+          </div>
         </div>
       </nav>
 
       <article class="hero__container">
         <div class="hero">
           <div class="hero__text">
-            <h1>Batter <b>learning Future</b> Starts With Geocatlog</h1>
+            <h1>Better <b>learning Future</b> Starts With Geocatalog</h1>
             <p>
               It is long established fact that reader distracted by the readable
               content.
             </p>
 
-            <a href="" class="btn-2">Get Started Now</a>
+            <a href="#getstartnow" class="btn-2">Get Started Now</a>
           </div>
           <div class="hero__img">
             <img
               src="./assets/images/hero-banner.png"
-              alt="Geocatlog students"
+              alt="Geocatalog students"
               loading="lazy"
             />
           </div>
@@ -71,7 +75,7 @@
     <!-- main -->
 
     <main>
-      <article class="course__container">
+      <article class="course__container" id="getstartnow">
         <h4>Course Categories</h4>
         <h2>Browse Top <b>Categories</b></h2>
 
@@ -125,7 +129,7 @@
             </div>
           </div>
         </div>
-        <a href="" class="btn-2">Check Courses</a>
+        <a href="./course.html" class="btn-2">Apply Now</a>
       </article>
 
       <article class="oedu__container">
@@ -137,7 +141,7 @@
           />
         </div>
         <div class="edu__text">
-          <h4>About Geocatlog</h4>
+          <h4>About Geocatalog</h4>
           <h2>We Provide The Best Online <b>Education</b></h2>
           <p>
             There are many variations of passages of Lorem Ipsum available, but
@@ -169,6 +173,35 @@
 
             <div class="progress three">
               <p></p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="user__testimonials">
+        <h2>What Our Students <b>Say's</b></h2>
+
+        <div class="testimonial-container">
+          <div class="progress-bar"></div>
+          <div class="fas fa-quote-left fa-quote"></div>
+          <div class="fas fa-quote-right fa-quote"></div>
+          <p class="testimonial">
+            Since applying the Coppercoat system I have been delighted with its
+            performance. There's been much less weed build-up than in previous
+            years, and what did appear has been easy to remove. It’s quite a
+            high initial outlay, but a lot of money will be saved over the years
+            and it seems to work as a very effective anti-fouling with the bonus
+            of offering good hull protection.
+          </p>
+          <div class="user">
+            <img
+              src="https://randomuser.me/api/portraits/women/45.jpg"
+              alt="user"
+              class="user-image"
+            />
+            <div class="user-details">
+              <h4 class="username">Mia Asano</h4>
+              <p class="role">Sales</p>
             </div>
           </div>
         </div>
@@ -286,7 +319,7 @@
     <footer>
       <div class="footer__container">
         <div class="logo">
-          <img src="./assets/images/logo.png" alt="Geocatlog" loading="lazy" />
+          <img src="./assets/images/logo.svg" alt="Geocatalog" loading="lazy" />
           <p>
             Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim
             eros elementum tristique. Duis cursus.
@@ -296,16 +329,16 @@
         <div class="quick__links">
           <ul>
             <h3>Links</h3>
-            <li><a href="">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="">Courses</a></li>
             <li><a href="">Writing</a></li>
-            <li><a href="">Get Hire</a></li>
+            <li><a href="./faqs.html">FAQ</a></li>
           </ul>
           <ul>
             <h3>Legal</h3>
             <li><a href="">Privecy & Policy</a></li>
             <li><a href="">Terms & Condition</a></li>
-            <li><a href="">Legal</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -327,7 +360,7 @@
         </div>
       </div>
       <p>
-        © Copyright 2022 | Geocatlog | All Rights Reserved by
+        © Copyright 2022 | Geocatalog | All Rights Reserved by
         <a href="https://github.com/lokeshkavisth">Lokeshkavisth</a>
       </p>
     </footer>
@@ -335,13 +368,13 @@
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
-    <!-- <script
+    <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script> -->
-    <!-- <script
+    ></script>
+    <script
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script> -->
+    ></script>
   </body>
 </html>
