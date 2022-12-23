@@ -538,12 +538,18 @@ main {
       border-bottom: 2px solid var(--light-gray);
       text-align: center;
     }
+
+    .cs-1 {
+      margin-top: 4rem;
+    }
+
     .courses {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       gap: 1rem;
-      margin: 4rem 0;
+      // margin: 4rem 0 0;
+      margin-bottom: 1rem;
 
       > div {
         background-color: var(--roman-silver_10);
