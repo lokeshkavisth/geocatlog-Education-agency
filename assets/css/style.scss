@@ -740,16 +740,21 @@ footer {
     }
   }
 
-  > p {
+  .copyright {
     padding: 1.5rem 0;
     border-top: 1px solid var(--light-gray);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
-    a {
-      margin-left: 0.2rem;
-      text-decoration: underline;
+    p {
+      display: flex;
+      align-items: center;
+      > a {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -786,13 +791,18 @@ footer {
 
       > h2 {
         writing-mode: vertical-lr;
-        font-size: 5rem;
+        font-size: 3rem;
       }
     }
     .text {
       background-color: var(--light-gray);
       padding: var(--section-padding);
       width: 50%;
+
+      > h3 {
+        margin: 1rem 0;
+        color: var(--oxford-blue);
+      }
     }
   }
 
