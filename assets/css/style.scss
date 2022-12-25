@@ -108,6 +108,10 @@ h4 {
   font-size: 1.1rem;
 }
 
+// h3 {
+//   // text-overflow: ellipsis;
+//   word-break: break-all;
+// }
 p,
 a {
   font-size: 1.2rem;
@@ -426,6 +430,7 @@ main {
 
           .text {
             > h3 {
+              text-overflow: ellipsis;
               a {
                 color: var(--light-coral);
               }
@@ -1017,10 +1022,30 @@ main {
 }
 
 // media queries
+@media screen and (max-width: 1572px) {
+  :root {
+    --lr-pd: 12%;
+  }
+}
+@media screen and (max-width: 1458px) {
+  :root {
+    --lr-pd: 10%;
+  }
+}
 
 @media screen and (max-width: 1440px) {
   :root {
-    --lr-pd: 10%;
+    --lr-pd: 8%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  :root {
+    --lr-pd: 6%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  :root {
+    --lr-pd: 4%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1133,12 +1158,8 @@ main {
     }
   }
 }
-@media screen and (max-width: 768px) {
-  :root {
-    --lr-pd: 3%;
-    --section-padding: 3rem;
-  }
 
+@media screen and (max-width: 950px) {
   header {
     position: relative;
     nav {
@@ -1188,6 +1209,22 @@ main {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 823px) {
+  main {
+    .course__container,
+    .our__writings {
+      padding: var(--section-padding) 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --lr-pd: 3%;
+    --section-padding: 3rem;
   }
 
   main {
